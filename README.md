@@ -25,7 +25,8 @@ Allows for compartmentalized application resources
 
 The Framework
 
-`sudo pip install Flask`
+`pip install flask`
+`pip install flask-wtf`
 
 ## autoenv
 
