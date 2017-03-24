@@ -27,12 +27,10 @@ def index():
 @app.route('/login', methods=['GET', 'POST'])
 
 def login():
-  embed()
   form = LoginForm(request.form)
   if request.method == 'POST' and not form.validate():
     flash('Login requested for OpenID="%s", remember_me=%s' %
           (form.openid.data, str(form.remember_me.data)))
-    embed()
     return redirect('/index')
   return render_template('login.html',
                           title='Sign In',

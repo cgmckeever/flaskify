@@ -23,7 +23,7 @@ Allows for compartmentalized application resources
 
 ## Flask
 
-The Framework
+The Packages
 
 `pip install ipython`
 `pip install flask`
