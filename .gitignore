@@ -1,5 +1,5 @@
 .DS_Store
 
 
-flask/*
+env/*
 __pycache__/*
