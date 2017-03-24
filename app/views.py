@@ -31,7 +31,7 @@ def login():
   if request.method == 'POST' and not form.validate():
     flash('Login requested for OpenID="%s", remember_me=%s' %
           (form.openid.data, str(form.remember_me.data)))
-    return redirect('/index')
+    return redirect('/login')
   return render_template('login.html',
                           title='Sign In',
                           form=form)
