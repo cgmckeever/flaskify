@@ -17,7 +17,7 @@ Python package manager
 
 ## VirtualEnv
 
-Allows for compartmentalized application resources
+Allows for compartmentalized application resources. [Read more](https://realpython.com/blog/python/python-virtual-environments-a-primer/)
 
 `pip install virtualenv`
 
@@ -51,6 +51,13 @@ Allows for automatic boot of VirtualEnv
 
 ## Stop VirtualEnv
 `deactivate`
+
+# References
+
+- https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+- https://github.com/pallets/flask/wiki/Large-app-how-to
+- http://flask.pocoo.org/docs/0.12/tutorial/
+- https://scotch.io/tutorials/build-a-crud-web-app-with-python-and-flask-part-one
 
 
 
