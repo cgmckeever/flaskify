@@ -1,4 +1,5 @@
-from flask import render_template, flash, redirect
+from IPython import embed
+from flask import render_template, flash, redirect, request
 from app import app
 from .forms import LoginForm
 
@@ -26,10 +27,12 @@ def index():
 @app.route('/login', methods=['GET', 'POST'])
 
 def login():
-  form = LoginForm()
-  if form.validate_on_submit():
+  embed()
+  form = LoginForm(request.form)
+  if request.method == 'POST' and not form.validate():
     flash('Login requested for OpenID="%s", remember_me=%s' %
           (form.openid.data, str(form.remember_me.data)))
+    embed()
     return redirect('/index')
   return render_template('login.html',
                           title='Sign In',

@@ -25,6 +25,7 @@ Allows for compartmentalized application resources
 
 The Framework
 
+`pip install ipython`
 `pip install flask`
 `pip install flask-wtf`
 `pip install flask-sqlalchemy`
